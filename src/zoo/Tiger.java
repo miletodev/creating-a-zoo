@@ -1,4 +1,4 @@
-package java;
+package zoo;
 
 public class Tiger extends Animal implements Walk, Eat {
     private int numberOfStripes;
@@ -6,7 +6,7 @@ public class Tiger extends Animal implements Walk, Eat {
     private int soundLevelOfRoar;
 
     public Tiger() {
-        super ("java.Tiger");
+        super ("zoo.Tiger");
     }
 
     public int getNumberOfStripes() {
@@ -35,11 +35,11 @@ public class Tiger extends Animal implements Walk, Eat {
 
     @Override
     public void eatingCompleted() {
-        System.out.println("java.Tiger: I have eaten meat");
+        System.out.println("zoo.Tiger: I have eaten meat");
     }
 
     @Override
     public void walking() {
-        System.out.println("java.Tiger: I am walking at the speed " + getSpeed() + " mph");
+        System.out.println("zoo.Tiger: I am walking at the speed " + getSpeed() + " mph");
     }
 }

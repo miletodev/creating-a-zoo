@@ -1,11 +1,11 @@
-package java;
+package zoo;
 
 public class Dolphin extends Animal implements Swim, Eat {
     private String color;
     private int swimmingSpeed;
 
     public Dolphin() {
-        super ("java.Dolphin");
+        super ("zoo.Dolphin");
     }
     public String getColor() {
         return color;
@@ -25,7 +25,7 @@ public class Dolphin extends Animal implements Swim, Eat {
 
     @Override
     public void eatingFood() {
-        System.out.println("java.Dolphin: I am eating delicious fish.");
+        System.out.println("zoo.Dolphin: I am eating delicious fish.");
     }
 
     @Override

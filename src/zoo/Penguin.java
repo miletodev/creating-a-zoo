@@ -1,4 +1,4 @@
-package java;
+package zoo;
 
 public class Penguin extends Animal implements Swim, Walk, Eat {
     private String color;
@@ -6,7 +6,7 @@ public class Penguin extends Animal implements Swim, Walk, Eat {
     private int walkingSpeed;
 
     public Penguin() {
-        super ("java.Penguin");
+        super ("zoo.Penguin");
     }
     public String getColor() {
         return color;
@@ -34,7 +34,7 @@ public class Penguin extends Animal implements Swim, Walk, Eat {
 
     @Override
     public void eatingFood() {
-        System.out.println("java.Penguin: I am eating fish.");
+        System.out.println("zoo.Penguin: I am eating fish.");
     }
 
     @Override
@@ -44,11 +44,11 @@ public class Penguin extends Animal implements Swim, Walk, Eat {
 
     @Override
     public void swimming() {
-        System.out.println("java.Penguin: I am swimming at the speed " + getSwimmingSpeed() + " mph");
+        System.out.println("zoo.Penguin: I am swimming at the speed " + getSwimmingSpeed() + " mph");
     }
 
     @Override
     public void walking() {
-        System.out.println("java.Penguin: I am walking at the speed " + getWalkingSpeed() + " mph");
+        System.out.println("zoo.Penguin: I am walking at the speed " + getWalkingSpeed() + " mph");
     }
 }

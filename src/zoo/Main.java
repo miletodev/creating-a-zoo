@@ -1,9 +1,9 @@
-package java;
+package zoo;
 
 import java.util.Scanner;
 
         /**
-         * java.Main class to run the Zoo java.Animal program.
+         * zoo.Main class to run the Zoo zoo.Animal program.
          * This class provides a menu-driven interface to interact with different animals.
          *
          * This program demonstrates the use of interfaces, inheritance, and polymorphism in Java.
@@ -25,7 +25,7 @@ import java.util.Scanner;
 
                 // Outer loop to continue the main Zoo menu
                 do {
-                    System.out.println("******* ZOO ANIMAL choice menu ******\n1. java.Tiger\n2. java.Dolphin\n3. java.Penguin\nEnter choice of animal (1-3): ");
+                    System.out.println("******* ZOO ANIMAL choice menu ******\n1. zoo.Tiger\n2. zoo.Dolphin\n3. zoo.Penguin\nEnter choice of animal (1-3): ");
                     menuChoice = animalChoiceMenu(keyboard);
                     switch (menuChoice) {
                         case 1:
@@ -36,7 +36,7 @@ import java.util.Scanner;
                                 menuChoice = animalDetailsManipulationMenu(keyboard, myTiger);
                                 switch (menuChoice) {
                                     case 1:
-                                        // Set properties for java.Tiger
+                                        // Set properties for zoo.Tiger
                                         System.out.println("Enter the tiger's name: ");
                                         myTiger.setNameOfAnimal(keyboard.nextLine());
                                         System.out.println("Enter weight: ");
@@ -59,8 +59,8 @@ import java.util.Scanner;
                                         keyboard.nextLine();
                                         break;
                                     case 2:
-                                        // Display properties of java.Tiger
-                                        System.out.println("java.Tiger's name: " + myTiger.getNameOfAnimal());
+                                        // Display properties of zoo.Tiger
+                                        System.out.println("zoo.Tiger's name: " + myTiger.getNameOfAnimal());
                                         System.out.println("Weight: " + myTiger.getWeight());
                                         System.out.println("Height: " + myTiger.getHeight());
                                         System.out.println("Age: " + myTiger.getAge());
@@ -69,11 +69,11 @@ import java.util.Scanner;
                                         System.out.println("Roar: " + myTiger.getSoundLevelOfRoar());
                                         break;
                                     case 3:
-                                        // Display movement of java.Tiger
+                                        // Display movement of zoo.Tiger
                                         myTiger.walking();
                                         break;
                                     case 4:
-                                        // Display eating behavior of java.Tiger
+                                        // Display eating behavior of zoo.Tiger
                                         myTiger.eatingFood();
                                         myTiger.eatingCompleted();
                                         break;
@@ -91,7 +91,7 @@ import java.util.Scanner;
                                 menuChoice = animalDetailsManipulationMenu(keyboard, myDolphin);
                                 switch (menuChoice) {
                                     case 1:
-                                        // Set properties for java.Dolphin
+                                        // Set properties for zoo.Dolphin
                                         System.out.println("Enter the dolphin's name: ");
                                         myDolphin.setNameOfAnimal(keyboard.nextLine());
                                         System.out.println("Enter weight: ");
@@ -110,8 +110,8 @@ import java.util.Scanner;
                                         keyboard.nextLine();
                                         break;
                                     case 2:
-                                        // Display properties of java.Dolphin
-                                        System.out.println("java.Dolphin's name: " + myDolphin.getNameOfAnimal());
+                                        // Display properties of zoo.Dolphin
+                                        System.out.println("zoo.Dolphin's name: " + myDolphin.getNameOfAnimal());
                                         System.out.println("Weight: " + myDolphin.getWeight());
                                         System.out.println("Height: " + myDolphin.getHeight());
                                         System.out.println("Age: " + myDolphin.getAge());
@@ -119,11 +119,11 @@ import java.util.Scanner;
                                         System.out.println("Swimming speed: " + myDolphin.getSwimmingSpeed());
                                         break;
                                     case 3:
-                                        // Display movement of java.Dolphin
+                                        // Display movement of zoo.Dolphin
                                         myDolphin.swimming();
                                         break;
                                     case 4:
-                                        // Display eating behavior of java.Dolphin
+                                        // Display eating behavior of zoo.Dolphin
                                         myDolphin.eatingFood();
                                         myDolphin.eatingCompleted();
                                         break;
@@ -141,7 +141,7 @@ import java.util.Scanner;
                                 menuChoice = animalDetailsManipulationMenu(keyboard, myPenguin);
                                 switch (menuChoice) {
                                     case 1:
-                                        // Set properties for java.Penguin
+                                        // Set properties for zoo.Penguin
                                         System.out.println("Enter the penguin's name: ");
                                         myPenguin.setNameOfAnimal(keyboard.nextLine());
                                         System.out.println("Enter weight: ");
@@ -163,8 +163,8 @@ import java.util.Scanner;
                                         keyboard.nextLine();
                                         break;
                                     case 2:
-                                        // Display properties of java.Penguin
-                                        System.out.println("java.Penguin's name: " + myPenguin.getNameOfAnimal());
+                                        // Display properties of zoo.Penguin
+                                        System.out.println("zoo.Penguin's name: " + myPenguin.getNameOfAnimal());
                                         System.out.println("Weight: " + myPenguin.getWeight());
                                         System.out.println("Height: " + myPenguin.getHeight());
                                         System.out.println("Age: " + myPenguin.getAge());
@@ -173,7 +173,7 @@ import java.util.Scanner;
                                         System.out.println("Walking speed: " + myPenguin.getWalkingSpeed());
                                         break;
                                     case 3:
-                                        // Display movement of java.Penguin
+                                        // Display movement of zoo.Penguin
                                         System.out.println("Should it be swimming (S) or walking? (W)");
                                         String choice = keyboard.nextLine();
                                         if (choice.equalsIgnoreCase("S")) {
@@ -185,7 +185,7 @@ import java.util.Scanner;
                                         }
                                         break;
                                     case 4:
-                                        // Display eating behavior of java.Penguin
+                                        // Display eating behavior of zoo.Penguin
                                         myPenguin.eatingFood();
                                         myPenguin.eatingCompleted();
                                         break;
@@ -213,9 +213,9 @@ import java.util.Scanner;
             public static int animalChoiceMenu(Scanner keyboard) {
                 int choiceGivenByUser;
                 System.out.println("******* ZOO ANIMAL choice menu ******");
-                System.out.println("1. java.Tiger");
-                System.out.println("2. java.Dolphin");
-                System.out.println("3. java.Penguin");
+                System.out.println("1. zoo.Tiger");
+                System.out.println("2. zoo.Dolphin");
+                System.out.println("3. zoo.Penguin");
                 System.out.println("Enter choice of animal:");
                 choiceGivenByUser = keyboard.nextInt();
                 keyboard.nextLine();

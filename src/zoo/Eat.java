@@ -1,4 +1,4 @@
-package java;
+package zoo;
 
 public interface Eat {
     public void eatingFood();

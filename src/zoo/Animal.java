@@ -1,4 +1,4 @@
-package java;
+package zoo;
 
 abstract public class Animal implements Eat {
 
@@ -15,7 +15,7 @@ abstract public class Animal implements Eat {
     private int age;
 
     public Animal() {
-        nameOfAnimal = "Unknown java.Animal";
+        nameOfAnimal = "Unknown zoo.Animal";
     }
 
     public Animal(String nameOfAnimal) {
